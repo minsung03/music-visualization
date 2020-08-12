@@ -73,8 +73,8 @@ file.onchange = function () {
 
     var check_file_type = ['etc', 'wav', 'mp3'];
 
-//     if (check_file_type.indexOf(file_type) == -1)
-//         alert('오디오 파일만 선택할 수 있습니다.');
+    if (check_file_type.indexOf(file_type) == -1)
+        alert('오디오 파일만 선택할 수 있습니다.');
     else {
         $(".music-title").text(file_name.split(".").splice(0, file_name.split(".").length - 1).join("."));
         $(".music-title").css({ "font-size": "35px" })
