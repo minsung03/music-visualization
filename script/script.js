@@ -141,6 +141,10 @@ file.onchange = function () {
             ctx.fillRect(0, 0, WIDTH, HEIGHT);
             ctx2.fillStyle = "rgba(0,0,0,0.1)";
             ctx2.fillRect(0, 0, WIDTH, HEIGHT);
+            ctx3.fillStyle = "rgba(0,0,0,.1)";
+            ctx3.fillRect(0, 0, WIDTH, HEIGHT);
+            ctx4.fillStyle = "rgba(0,0,0,.1)";
+            ctx4.fillRect(0,0, WIDTH, HEIGHT);
 
             for (var i = 0; i < bufferLength; i++) {
                 barHeight = dataArray[i] * 4 ;
@@ -155,10 +159,10 @@ file.onchange = function () {
                 ctx.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
                 ctx2.fillStyle = "rgba(" + r + "," + g + "," + b + "," + a + ")";
                 ctx2.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
-                // ctx3.fillStyle = "rgba(" + r + "," + g + "," + b + "," + a + ")";
-                // ctx3.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
-                // ctx4.fillStyle = "rgba(" + r + "," + g + "," + b + "," + a + ")";
-                // ctx4.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
+                ctx3.fillStyle = "rgba(" + r + "," + g + "," + b + "," + a + ")";
+                ctx3.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
+                ctx4.fillStyle = "rgba(" + r + "," + g + "," + b + "," + a + ")";
+                ctx4.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
 
                 x += barWidth + 1;
             }
